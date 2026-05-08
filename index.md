@@ -1,9 +1,3 @@
----
-title: ""
----
-
-# nil-xit
-
 A lightweight distributed reactive runtime for shared state synchronization, live instrumentation, and multi-client visualization.
 
 ---
