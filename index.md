@@ -107,7 +107,9 @@ Current reference frontend:
 
 - [nil-sandbox-py](https://github.com/njaldea/nil-sandbox-py)
   - simple Python sandbox using nil-clix, nil-service and nil-xit
-- [nil-xit-gtest](https://github.com/njaldea/nil-xit-gtest-example)
+- [nil-xit-gtest](https://github.com/njaldea/nil-xit-gtest-example) (vcpkg)
+  - adapter layer of nil-xit to a testing framework
+- [nil-xit-gtest](https://github.com/njaldea/ppa) (deb system isntall)
   - adapter layer of nil-xit to a testing framework
 
 ---
@@ -122,7 +124,8 @@ Current reference frontend:
 
 ## Miscellaneous Repositories
 
-- [ppa](https://github.com/njaldea/ppa)
+- [ppa](https://github.com/njaldea/ppa/tree/ppa)
+  - [page](https://njaldea.github.io/ppa/)
 - [vcpkg-ports](https://github.com/njaldea/nil-vcpkg-ports)
 
 
