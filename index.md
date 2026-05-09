@@ -8,8 +8,6 @@ nil-xit separates **execution**, **state**, and **frontend rendering**.
 
 - The `nil-xit` runtime owns frame semantics, lifecycle, and message handling. Execution is expressed as frame logic; transport is delegated to `nil-service`.
 - Frontends are **ephemeral sessions**
-- Multiple frontends can attach to the same runtime simultaneously
-
 This enables live shared visualization of running systems, tests, and experiments without embedding a UI framework into the host application.
 
 ---
@@ -66,8 +64,6 @@ Values are externally accessible reactive state objects exposed via handles.
 ## Key properties
 
 - Backend is the single source of truth
-- Frontends are disposable and stateless
-- Multiple clients can observe the same runtime
 - State is automatically rehydrated on reconnect
 - UI frameworks are interchangeable
 
@@ -107,19 +103,27 @@ Current reference frontend:
 
 ---
 
-## Repositories and demos
+## Examples
+
+- [nil-sandbox-py](https://github.com/njaldea/nil-sandbox-py)
+  - simple Python sandbox using nil-clix, nil-service and nil-xit
+- [nil-xit-gtest](https://github.com/njaldea/nil-xit-gtest-example)
+  - adapter layer of nil-xit to a testing framework
+
+---
+
+## Repositories
 
 - [nil-xit](https://github.com/njaldea/nil-xit)
 - [nil-service](https://github.com/njaldea/nil-service)
 - [nil-xit-test](https://github.com/njaldea/nil-xit-test)
-- [nil-sandbox-py](https://github.com/njaldea/nil-sandbox-py)
 
-## Design philosophy
+---
 
-nil-xit is the runtime and semantic system for frames, state, and message handling.
-nil-service is a transport adapter that does not contain runtime semantics.
+## Miscellaneous Repositories
 
-It is a **distributed reactive runtime substrate** where:
-- state lives on the server
-- frontend is a projection layer
-- visualization is decoupled from execution
+- [ppa](https://github.com/njaldea/ppa)
+- [vcpkg-ports](https://github.com/njaldea/nil-vcpkg-ports)
+
+
+
